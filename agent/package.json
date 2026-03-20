@@ -1,0 +1,16 @@
+{
+  "name": "telemetryiq-agent",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "node telemetry.js",
+    "dev": "nodemon telemetry.js"
+  },
+  "dependencies": {
+    "axios": "^1.7.9",
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}
