@@ -6,6 +6,12 @@ The project demonstrates a seamless integration between a simulated physics-base
 
 ---
 
+## Screenshot
+<img width="1899" height="891" alt="image" src="https://github.com/user-attachments/assets/14f3e8ad-0563-44e6-b6dc-6066f83f49c0" />
+<img width="1900" height="901" alt="image" src="https://github.com/user-attachments/assets/3da5b9b2-a12a-4d3c-a264-a194fdd51689" />
+<img width="1895" height="899" alt="image" src="https://github.com/user-attachments/assets/0f5240f1-c4cc-45cd-a527-b30b1e404587" />
+
+
 ## ⚡ Key Features
 
 *   **Real-Time Data Streaming:** Instantly displays CPU, Memory, Uptime, and Error metrics via Socket.io.
