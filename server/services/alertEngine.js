@@ -1,7 +1,14 @@
 // server/services/alertEngine.js
 // Alert threshold engine for TelemetryIQ
 
-import { formatDistanceToNow } from 'date-fns';
+// Plain JS relative-time helper (no external deps needed)
+function formatDistanceToNow(date) {
+  const seconds = Math.floor((Date.now() - new Date(date).getTime()) / 1000);
+  if (seconds < 60) return 'less than a minute ago';
+  if (seconds < 3600) return `${Math.floor(seconds / 60)} minutes ago`;
+  if (seconds < 86400) return `${Math.floor(seconds / 3600)} hours ago`;
+  return `${Math.floor(seconds / 86400)} days ago`;
+}
 
 const MAX_ALERTS = 50;
 
@@ -82,7 +89,7 @@ function hasActiveAlertForMetric(metricName) {
 
 function relativeTime(isoString) {
   try {
-    return formatDistanceToNow(new Date(isoString), { addSuffix: true });
+    return formatDistanceToNow(isoString);
   } catch {
     return 'just now';
   }

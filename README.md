@@ -22,6 +22,13 @@ The project demonstrates a seamless integration between a simulated physics-base
 
 ---
 
+## ✅ Prerequisites
+
+*   **Node.js v18 or higher** — [Download here](https://nodejs.org)
+    *(The `run.bat` script will automatically check your Node.js version and warn you if it's too old.)*
+
+---
+
 ## 🚀 Running the Project
 
 ### One-Click Start (Recommended for Reviewers/Recruiters)
